@@ -1,10 +1,10 @@
 import logging
 
-from core.comm.transmitter import Transmitter
-from core.comm.protocols import packet_pb2
-from core.comm.protocols import command_pb2
-from core.command import TeamCommand
-from core.comm.thread_job import Job
+from V3SProtoComm.core.comm.transmitter import Transmitter
+from V3SProtoComm.core.comm.protocols import packet_pb2
+from V3SProtoComm.core.comm.protocols import command_pb2
+from V3SProtoComm.core.command import TeamCommand
+from V3SProtoComm.core.comm.thread_job import Job
 
 class ProtoControl(Transmitter):
     def __init__(self, team_color_yellow: bool, team_command: TeamCommand = None, control_ip='127.0.0.1', control_port=20011):

@@ -1,5 +1,5 @@
-from core.comm.receiver import Receiver
-from core.comm.protocols import vssref_command_pb2
+from V3SProtoComm.core.comm.receiver import Receiver
+from V3SProtoComm.core.comm.protocols import vssref_command_pb2
 
 import json
 from google.protobuf.json_format import MessageToJson

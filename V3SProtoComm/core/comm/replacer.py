@@ -1,9 +1,9 @@
 import logging
 from typing import List
 
-from core.comm.transmitter import Transmitter
-from core.comm.protocols import vssref_placement_pb2
-from core.data import EntityData
+from V3SProtoComm.core.comm.transmitter import Transmitter
+from V3SProtoComm.core.comm.protocols import vssref_placement_pb2
+from V3SProtoComm.core.data import EntityData
 
 
 class ReplacerComm(Transmitter):

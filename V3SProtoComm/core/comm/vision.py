@@ -1,9 +1,9 @@
 import logging
 
-from core.comm.receiver import Receiver
-from core.comm.protocols import packet_pb2
-from core.data import FieldData, EntityData
-from core.comm.thread_job import Job
+from V3SProtoComm.core.comm.receiver import Receiver
+from V3SProtoComm.core.comm.protocols import packet_pb2
+from V3SProtoComm.core.data import FieldData, EntityData
+from V3SProtoComm.core.comm.thread_job import Job
 
 import json
 from google.protobuf.json_format import MessageToJson
