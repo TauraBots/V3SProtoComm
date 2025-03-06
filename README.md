@@ -16,5 +16,5 @@ pip3 install -r requirements.txt
 Than to run a test, run:
 
 ```bash
-python3 main.py
+python3 gotoball.py
 ```
