@@ -70,7 +70,7 @@ V3SProtoComm/
 └── tests.py
 
 ```
-> [!NOTE]:
+> [!NOTE]
 >  To ensure that the non-Python files (such as the .proto files in the protobuf directory)
 >  are included in the package, a MANIFEST.in file is used with the following directive:
 
