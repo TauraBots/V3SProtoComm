@@ -1,7 +1,7 @@
 astroid
 isort
 lazy-object-proxy
-mccabe=
+mccabe
 numpy
 protobuf
 pylint
