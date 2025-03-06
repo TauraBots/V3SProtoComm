@@ -2,15 +2,15 @@ from setuptools import setup, find_packages
 
 setup(
     name="V3SProtoComm",
-    version="0.1.0",
+    version="1.0.0",
     description="Pacote para comunicação e controle de robôs via Protobuf",
     long_description=open("README.md", encoding="utf-8").read(),
     long_description_content_type="text/markdown",
-    author="Seu Nome",
-    author_email="seu.email@exemplo.com",
-    url="https://github.com/seu_usuario/V3SProtoComm",
+    author="Thassio",
+    author_email="thxssio@gmail.com",
+    url="https://github.com/Taurabots/V3SProtoComm",
     packages=find_packages(),
-    include_package_data=True,  # Importante para incluir os arquivos listados no MANIFEST.in
+    include_package_data=True, 
     install_requires=[
         "numpy",
         "protobuf",

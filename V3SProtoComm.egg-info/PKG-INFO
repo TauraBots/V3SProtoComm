@@ -1,0 +1,53 @@
+Metadata-Version: 2.2
+Name: V3SProtoComm
+Version: 0.1.0
+Summary: Pacote para comunicação e controle de robôs via Protobuf
+Home-page: https://github.com/seu_usuario/V3SProtoComm
+Author: Seu Nome
+Author-email: seu.email@exemplo.com
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+Requires-Dist: protobuf
+Requires-Dist: six
+Requires-Dist: toml
+Requires-Dist: wrapt
+Provides-Extra: dev
+Requires-Dist: astroid; extra == "dev"
+Requires-Dist: isort; extra == "dev"
+Requires-Dist: lazy-object-proxy; extra == "dev"
+Requires-Dist: mccabe; extra == "dev"
+Requires-Dist: pylint; extra == "dev"
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: provides-extra
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# V3SProtoComm
+
+The library supports the following communications:
+
+- Receiving vision data in polling and multithread mode
+- Sending speed commands in polling and multithread mode
+- Receiving game data from the VSSReferee in polling mode
+- Sending replacement packages to the VSSReplacer in polling mode
+
+To install the dependencies, do as follows:
+
+```bash
+pip3 install -r requirements.txt
+```
+
+Than to run a test, run:
+
+```bash
+python3 gotoball.py
+```

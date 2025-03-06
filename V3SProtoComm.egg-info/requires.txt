@@ -1,0 +1,12 @@
+numpy
+protobuf
+six
+toml
+wrapt
+
+[dev]
+astroid
+isort
+lazy-object-proxy
+mccabe
+pylint
