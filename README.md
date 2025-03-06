@@ -9,6 +9,8 @@ The library supports the following communications:
   - Receiving game data from the VSSReferee in polling mode
   - Sending replacement packages to the VSSReplacer in polling mode
 
+[![Python package](https://github.com/TauraBots/V3SProtoComm/actions/workflows/python-package.yml/badge.svg)](https://github.com/TauraBots/V3SProtoComm/actions/workflows/python-package.yml)
+
 Installation
 ------------
 
