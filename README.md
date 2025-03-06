@@ -13,13 +13,13 @@ Installation
 ------------
 
 You can install the package directly from GitHub with pip:
-
+```
     pip install git+https://github.com/TauraBots/V3SProtoComm.git
-
+```
 Or, if you have cloned the repository, install the dependencies from the requirements file:
-
+```
     pip3 install -r requirements.txt
-
+```
 Usage
 -----
 
@@ -33,7 +33,7 @@ it is close enough (i.e., when it "dominates" the ball).
 
 Project Structure
 -----------------
-
+```
 V3SProtoComm/
 ├── core
 │   ├── comm
@@ -69,9 +69,12 @@ V3SProtoComm/
 ├── requirements.txt
 └── tests.py
 
-Note:
-  To ensure that the non-Python files (such as the .proto files in the protobuf directory)
-  are included in the package, a MANIFEST.in file is used with the following directive:
+```
+> [!NOTE]:
+>  To ensure that the non-Python files (such as the .proto files in the protobuf directory)
+>  are included in the package, a MANIFEST.in file is used with the following directive:
+
+------------
 
       recursive-include core/comm/protocols/protobuf *
 
@@ -80,7 +83,3 @@ Contributing
 
 Contributions are welcome! Feel free to open issues or submit pull requests.
 
-License
--------
-
-[Insert License Information Here]
