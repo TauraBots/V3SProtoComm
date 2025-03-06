@@ -3,13 +3,13 @@ import json
 import logging
 import numpy as np
 
-from core.comm.controls import ProtoControl, ProtoControlThread
-from core.command import TeamCommand
-from core.comm.referee import RefereeComm
-from core.comm.replacer import ReplacerComm
-from core.comm.vision import ProtoVision, ProtoVisionThread
-from core.data import FieldData
-from core import data
+from V3SProtoComm.core.comm.controls import ProtoControl, ProtoControlThread
+from V3SProtoComm.core.command import TeamCommand
+from V3SProtoComm.core.comm.referee import RefereeComm
+from V3SProtoComm.core.comm.replacer import ReplacerComm
+from V3SProtoComm.core.comm.vision import ProtoVision, ProtoVisionThread
+from V3SProtoComm.core.data import FieldData
+from V3SProtoComm.core import data
 
 logging.basicConfig(level=logging.INFO)
 

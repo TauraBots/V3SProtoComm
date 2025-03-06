@@ -1,10 +1,10 @@
 import time
 import logging
 import math
-from core.data import FieldData
-from core.comm.vision import ProtoVisionThread
-from core.comm.controls import ProtoControl
-from core.command import TeamCommand
+from V3SProtoComm.core.data import FieldData
+from V3SProtoComm.core.comm.vision import ProtoVisionThread
+from V3SProtoComm.core.comm.controls import ProtoControl
+from V3SProtoComm.core.command import TeamCommand
 
 def gotoball():
     print("\n=== Gotoball: Ir em direção à bola ===")
