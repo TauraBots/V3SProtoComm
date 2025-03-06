@@ -1,1 +1,10 @@
 __pycache__/
+V3SProtoComm.egg-info/
+dist/
+build/
+*.pyc
+*.pyo
+*.pyd
+*.pyw
+*.pyz
+*.pyzw
