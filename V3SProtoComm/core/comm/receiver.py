@@ -1,9 +1,10 @@
+# receiver.py
 import socket
 import struct
 from abc import ABC, abstractmethod
 
 class Receiver(ABC):
-    def __init__(self, receiver_ip='224.0.0.1', receiver_port=10002):
+    def __init__(self, receiver_ip='224.5.23.2', receiver_port=10002):
         """
         Init Client object.
         Extended description of function.
