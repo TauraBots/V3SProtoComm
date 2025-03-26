@@ -69,4 +69,4 @@ VSSRef_Placement = _reflection.GeneratedProtocolMessageType('VSSRef_Placement', 
 _sym_db.RegisterMessage(VSSRef_Placement)
 
 
-# @@protoc_insertion_point(module_scope)s
+# @@protoc_insertion_point(module_scope)
