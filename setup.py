@@ -99,8 +99,9 @@ def compile_proto_files():
     print("Compilação dos arquivos .proto concluída.")
 
 
-# Compilar os arquivos .proto antes da instalação
-compile_proto_files()
+# Compilar os arquivos .proto antes da instalação, mas não durante o dry-run do colcon
+if "--dry-run" not in sys.argv:
+    compile_proto_files()
 
 setup(
     name="V3SProtoComm",
