@@ -3,6 +3,7 @@ import os
 import glob
 import subprocess
 import sys
+import re
 
 
 # Função para compilar os arquivos .proto
@@ -61,13 +62,36 @@ def compile_proto_files():
     pb2_files = glob.glob(
         os.path.join("V3SProtoComm", "core", "comm", "protocols", "*_pb2.py")
     )
+
+    # Obter lista de todos os nomes de arquivos _pb2.py (sem a extensão)
+    pb2_modules = [os.path.basename(f)[:-3] for f in pb2_files]
+    print(f"Módulos _pb2 encontrados: {pb2_modules}")
+
     for pb2_file in pb2_files:
+        print(f"Corrigindo importações em {pb2_file}...")
         with open(pb2_file, "r") as f:
             content = f.read()
 
-        # Corrigir importações
-        content = content.replace("import command_pb2", "from . import command_pb2")
-        content = content.replace("import packet_pb2", "from . import packet_pb2")
+        # Usar expressão regular para encontrar todas as importações de arquivos _pb2
+        # Padrão: import nome_pb2 ou import nome_pb2 as nome__pb2
+        import_pattern = r"import\s+(\w+_pb2)(?:\s+as\s+(\w+))?"
+
+        # Encontrar todas as importações
+        imports = re.findall(import_pattern, content)
+
+        # Substituir cada importação encontrada
+        for module, alias in imports:
+            if alias:
+                # Importação com alias: import nome_pb2 as nome__pb2
+                old_import = f"import {module} as {alias}"
+                new_import = f"from . import {module} as {alias}"
+            else:
+                # Importação simples: import nome_pb2
+                old_import = f"import {module}"
+                new_import = f"from . import {module}"
+
+            print(f"  Substituindo '{old_import}' por '{new_import}'")
+            content = content.replace(old_import, new_import)
 
         with open(pb2_file, "w") as f:
             f.write(content)
