@@ -91,7 +91,7 @@ setup(
     include_package_data=True,
     install_requires=[
         "numpy",
-        "protobuf==3.20.3",  # Fixar versão compatível
+        "protobuf",  # Usar a versão do usuário
         "six",
         "toml",
         "wrapt",
